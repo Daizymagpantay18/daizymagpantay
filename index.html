@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAIZY MAGPANTAY — Cinematic Portfolio & Private CMS</title>
+  
+  <!-- Fonts: Space Grotesk, Manrope, Cormorant Garamond, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Tailwind CSS Engine -->
+  <script src="js/vendor/tailwindcss.js"></script>
+  <script src="js/tailwind.config.js"></script>
+</head>
+<body class="bg-[#080808] text-[#F5F5F5] antialiased selection:bg-[#F28C28]/30 selection:text-white">
+  
+  <!-- Vue 3 Root Application Mount -->
+  <div id="app">
+    <router-view></router-view>
+  </div>
+
+  <!-- Vendor Libraries -->
+  <script src="js/vendor/Vue.js"></script>
+  <script src="js/vendor/VueRouter.js"></script>
+  <script src="js/vendor/lucide.min.js"></script>
+  <script src="js/vendor/sweetalert2@11.js"></script>
+
+  <!-- Global Helpers, Data Models & Reactive Store -->
+  <script src="js/labels.js"></script>
+  <script src="js/model.js"></script>
+  <script src="js/lib/alerts.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/controller.js"></script>
+
+  <!-- Reusable UI Components -->
+  <script src="js/components/app-icon.js"></script>
+  <script src="js/components/status-badge.js"></script>
+  <script src="js/components/page-header.js"></script>
+  <script src="js/components/password-field.js"></script>
+  <script src="js/components/form-field.js"></script>
+  <script src="js/components/app-modal.js"></script>
+  <script src="js/components/app-sidebar.js"></script>
+  <script src="js/components/app-topbar.js"></script>
+  <script src="js/components/project-modal.js"></script>
+
+  <!-- Public Views -->
+  <script src="js/views/public/home-view.js"></script>
+
+  <!-- Admin Views -->
+  <script src="js/views/admin/login-view.js"></script>
+  <script src="js/views/admin/dashboard-view.js"></script>
+  <script src="js/views/admin/projects-view.js"></script>
+  <script src="js/views/admin/project-editor-view.js"></script>
+  <script src="js/views/admin/profile-view.js"></script>
+  <script src="js/views/admin/skills-view.js"></script>
+  <script src="js/views/admin/journey-view.js"></script>
+  <script src="js/views/admin/messages-view.js"></script>
+  <script src="js/views/admin/media-view.js"></script>
+  <script src="js/views/admin/analytics-view.js"></script>
+  <script src="js/views/admin/settings-view.js"></script>
+  <script src="js/views/admin/admin-layout.js"></script>
+
+  <!-- Router Configuration -->
+  <script src="js/router.js"></script>
+
+  <!-- Vue 3 Bootstrap Script -->
+  <script>
+    const { createApp } = Vue;
+
+    const app = createApp({
+      async mounted() {
+        // Initial authentication check on load
+        await AppController.checkAuth();
+      }
+    });
+
+    // Register Global Components
+    app.component('app-icon', AppIcon);
+    app.component('status-badge', StatusBadge);
+    app.component('page-header', PageHeader);
+    app.component('password-field', PasswordField);
+    app.component('form-field', FormField);
+    app.component('app-modal', AppModal);
+    app.component('app-sidebar', AppSidebar);
+    app.component('app-topbar', AppTopbar);
+    app.component('project-modal', ProjectModal);
+
+    // Mount Router and App
+    app.use(router);
+    app.mount('#app');
+  </script>
+</body>
+</html>

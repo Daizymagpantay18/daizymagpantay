@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="edocsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="50%" stop-color="#0e0e0e"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="orangeBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F28C28"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#F28C28" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#edocsBg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="150" y1="0" x2="150" y2="750"/>
+    <line x1="600" y1="0" x2="600" y2="750"/>
+    <line x1="1050" y1="0" x2="1050" y2="750"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="550" x2="1200" y2="550"/>
+  </g>
+
+  <!-- Large Background Typography -->
+  <text x="600" y="440" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="140" font-weight="900" letter-spacing="12" fill="rgba(255,255,255,0.02)">E-DOCS</text>
+
+  <!-- Floating UI Mockup Panels -->
+  <!-- Back Glass Layer -->
+  <rect x="220" y="120" width="760" height="500" rx="16" fill="#181818" stroke="rgba(255,255,255,0.08)" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Main Glass Console -->
+  <g filter="url(#cardGlow)">
+    <rect x="260" y="160" width="680" height="440" rx="14" fill="#111111" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+    
+    <!-- Top Bar -->
+    <rect x="260" y="160" width="680" height="50" rx="14" fill="#181818"/>
+    <circle cx="295" cy="185" r="5" fill="#ff5f56"/>
+    <circle cx="315" cy="185" r="5" fill="#ffbd2e"/>
+    <circle cx="335" cy="185" r="5" fill="#27c93f"/>
+    <text x="600" y="191" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="12" letter-spacing="2" fill="#A0A0A0">NCST E-DOCS // VERIFICATION CORE</text>
+    <rect x="850" y="175" width="70" height="20" rx="4" fill="#F28C28" opacity="0.2"/>
+    <text x="885" y="189" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="700" fill="#FFB347">ACTIVE</text>
+
+    <!-- Sidebar in Mockup -->
+    <rect x="280" y="230" width="160" height="345" rx="8" fill="#151515" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    <rect x="295" y="250" width="130" height="28" rx="6" fill="url(#orangeBar)" opacity="0.15"/>
+    <text x="310" y="268" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#F28C28">Dashboard</text>
+    <text x="310" y="305" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#A0A0A0">Requests (24)</text>
+    <text x="310" y="340" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#A0A0A0">Verification</text>
+    <text x="310" y="375" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#A0A0A0">Archive</text>
+
+    <!-- Main Content in Mockup -->
+    <rect x="460" y="230" width="460" height="90" rx="8" fill="#161616" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <text x="480" y="260" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#F5F5F5">Official Academic Transcript Request</text>
+    <text x="480" y="285" font-family="'Space Grotesk', sans-serif" font-size="11" fill="#A0A0A0">Student ID: 2024-889102 • Department of Computing</text>
+    <rect x="830" y="250" width="70" height="24" rx="4" fill="url(#orangeBar)"/>
+    <text x="865" y="266" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#080808">APPROVE</text>
+
+    <!-- Certificate Card Preview -->
+    <rect x="460" y="340" width="460" height="235" rx="8" fill="#141414" stroke="rgba(242,140,40,0.3)" stroke-width="1"/>
+    <rect x="480" y="360" width="300" height="15" rx="3" fill="rgba(255,255,255,0.1)"/>
+    <rect x="480" y="385" width="220" height="12" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <rect x="480" y="410" width="260" height="12" rx="3" fill="rgba(255,255,255,0.05)"/>
+
+    <!-- Dynamic QR Stamp Mockup -->
+    <rect x="800" y="430" width="100" height="100" rx="8" fill="#0c0c0c" stroke="url(#orangeBar)" stroke-width="1.5"/>
+    <rect x="815" y="445" width="25" height="25" fill="#F28C28"/>
+    <rect x="860" y="445" width="25" height="25" fill="#F28C28"/>
+    <rect x="815" y="490" width="25" height="25" fill="#F28C28"/>
+    <rect x="850" y="480" width="15" height="15" fill="#FFB347"/>
+    <rect x="870" y="500" width="15" height="15" fill="#FFB347"/>
+    <text x="850" y="542" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="8" letter-spacing="1" fill="#A0A0A0">VERIFIED</text>
+  </g>
+</svg>

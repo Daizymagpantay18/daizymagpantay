@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <rect width="1000" height="600" fill="#141414"/>
+  <rect x="30" y="30" width="940" height="540" rx="12" fill="#181818" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <rect x="30" y="30" width="940" height="45" rx="12" fill="#222222"/>
+  <circle cx="60" cy="52" r="5" fill="#FFB347"/>
+  <text x="80" y="56" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#F5F5F5">SECURITY VERIFICATION &amp; QR DECODER SUITE</text>
+  <rect x="60" y="105" width="420" height="435" rx="8" fill="#111111" stroke="rgba(242,140,40,0.3)" stroke-width="1"/>
+  <text x="80" y="145" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#F5F5F5">CRYPTOGRAPHIC VERIFICATION</text>
+  <rect x="80" y="175" width="380" height="240" rx="6" fill="#0c0c0c"/>
+  <circle cx="270" cy="295" r="50" fill="none" stroke="#F28C28" stroke-width="3" stroke-dasharray="8 6"/>
+  <rect x="510" y="105" width="430" height="435" rx="8" fill="#111111" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="530" y="145" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" fill="#F5F5F5">CREDENTIAL METADATA INSPECTOR</text>
+</svg>

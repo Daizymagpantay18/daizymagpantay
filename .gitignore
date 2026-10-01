@@ -1,0 +1,24 @@
+# ===========================
+# Sensitive Config (DO NOT COMMIT)
+# ===========================
+config/config.php
+
+# ===========================
+# Uploads (user-generated files)
+# ===========================
+uploads/
+
+# ===========================
+# OS / Editor Files
+# ===========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# ===========================
+# XAMPP / Server Cache
+# ===========================
+*.tmp
+*.bak

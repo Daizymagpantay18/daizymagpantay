@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="avGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#F28C28" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#111111" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="#111111"/>
+  <circle cx="200" cy="200" r="180" fill="#181818" stroke="#F28C28" stroke-width="2"/>
+  <circle cx="200" cy="150" r="60" fill="#222" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <path d="M100 340 C100 250 150 240 200 240 C250 240 300 250 300 340 Z" fill="#222" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="170" fill="url(#avGlow)"/>
+  <text x="200" y="380" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#F28C28">ADMINISTRATOR</text>
+</svg>

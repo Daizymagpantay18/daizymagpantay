@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #080808;
+  --bg-secondary: #111111;
+  --bg-card: #181818;
+  --bg-card-elevated: #222222;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A0A0A0;
+  --accent: #F28C28;
+  --accent-light: #FFB347;
+  --border-subtle: rgba(255, 255, 255, 0.10);
+  --border-light: rgba(255, 255, 255, 0.16);
+  --glass-bg: rgba(24, 24, 24, 0.65);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #080808;
+  color: #F5F5F5;
+  min-height: 100vh;
+  overflow-x: hidden;
+  selection-background-color: #F28C28;
+  selection-color: #080808;
+}
+
+::selection {
+  background: rgba(242, 140, 40, 0.35);
+  color: #FFFFFF;
+}
+
+/* Typography Classes */
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-manrope {
+  font-family: 'Manrope', sans-serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Glassmorphic Panels */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel-elevated {
+  background: rgba(28, 28, 28, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.65);
+}
+
+.glass-nav {
+  background: rgba(8, 8, 8, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F28C28;
+}
+
+/* Orange Subtle Ambient Glows */
+.orange-glow {
+  box-shadow: 0 0 35px -5px rgba(242, 140, 40, 0.35);
+}
+
+.orange-glow-sm {
+  box-shadow: 0 0 15px -3px rgba(242, 140, 40, 0.4);
+}
+
+.orange-text-glow {
+  text-shadow: 0 0 20px rgba(242, 140, 40, 0.5);
+}
+
+.radial-warm-lighting {
+  background: radial-gradient(circle at 50% 30%, rgba(242, 140, 40, 0.12) 0%, rgba(8, 8, 8, 0) 70%);
+}
+
+/* Interactive Floating Pulse Keyframes */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(242, 140, 40, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(242, 140, 40, 0);
+  }
+}
+
+@keyframes markerRipple {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatSlow 7s ease-in-out 2s infinite;
+}
+
+.animate-marker-pulse {
+  animation: pulseGlow 2.5s infinite;
+}
+
+.animate-ripple {
+  animation: markerRipple 3s ease-in-out infinite;
+}
+
+/* Custom Marker Hover Tooltip */
+.marker-pin {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.marker-pin:hover {
+  transform: scale(1.15);
+  background-color: #F28C28;
+  color: #080808;
+}
+
+/* Editorial Project Panels */
+.project-card {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.45s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(242, 140, 40, 0.4);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 30px -10px rgba(242, 140, 40, 0.15);
+}
+
+.project-card .img-zoom {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover .img-zoom {
+  transform: scale(1.04);
+}
+
+/* Magnetic Buttons & Clean Hover Transitions */
+.btn-primary {
+  background: #F28C28;
+  color: #080808;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-primary:hover {
+  background: #FFB347;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(242, 140, 40, 0.4);
+}
+
+.btn-outline {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: #F5F5F5;
+  transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+  border-color: #F28C28;
+  color: #F28C28;
+  background: rgba(242, 140, 40, 0.08);
+}
+
+/* Subtle Text Outline for Editorial Aesthetic */
+.text-stroke-subtle {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  color: transparent;
+}
+
+/* Smooth Form Fields */
+.admin-input {
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #F5F5F5;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.admin-input:focus {
+  outline: none;
+  border-color: #F28C28;
+  box-shadow: 0 0 0 2px rgba(242, 140, 40, 0.2);
+}
+
+/* Admin Sidebar Active State */
+.sidebar-link.active {
+  background: rgba(242, 140, 40, 0.12);
+  color: #FFB347;
+  border-left: 3px solid #F28C28;
+}
+
+.sidebar-link:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.04);
+  color: #F5F5F5;
+}
+
+/* Modal Transition */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: scale(0.97);
+}

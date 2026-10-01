@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <radialGradient id="orangeGlow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#F28C28" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#F28C28" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#080808" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rimLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347"/>
+      <stop offset="30%" stop-color="#F28C28"/>
+      <stop offset="70%" stop-color="#222222"/>
+      <stop offset="100%" stop-color="#080808"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#0b0b0b"/>
+    </linearGradient>
+    <filter id="cinematicBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Atmospheric Background -->
+  <rect width="800" height="1000" fill="#080808"/>
+  
+  <!-- Warm Orange Ambient Lighting -->
+  <circle cx="400" cy="380" r="320" fill="url(#orangeGlow)" filter="url(#cinematicBlur)"/>
+  <circle cx="580" cy="280" r="180" fill="#FFB347" opacity="0.18" filter="url(#cinematicBlur)"/>
+  
+  <!-- Subtle Architectural Grid Background -->
+  <g stroke="rgba(255,255,255,0.03)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="1000"/>
+    <line x1="400" y1="0" x2="400" y2="1000"/>
+    <line x1="700" y1="0" x2="700" y2="1000"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="600" x2="800" y2="600"/>
+  </g>
+
+  <!-- Editorial Silhouette / Fashion-Tech Stylized Portrait -->
+  <g transform="translate(0, 40)">
+    <!-- Aura Halo -->
+    <ellipse cx="400" cy="340" rx="190" ry="240" fill="none" stroke="url(#rimLight)" stroke-width="2" opacity="0.4"/>
+    <ellipse cx="400" cy="340" rx="205" ry="255" fill="none" stroke="#F28C28" stroke-width="1" stroke-dasharray="4 8" opacity="0.3"/>
+
+    <!-- Shoulders & Coat -->
+    <path d="M180 820 C220 590 320 540 400 540 C480 540 580 590 620 820 L660 960 L140 960 Z" fill="url(#suitGrad)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    
+    <!-- Warm Orange Rim Line on Suit -->
+    <path d="M580 590 C620 700 640 820 655 960" stroke="#F28C28" stroke-width="3" fill="none" opacity="0.8"/>
+    <path d="M220 590 C180 700 160 820 145 960" stroke="#FFB347" stroke-width="1.5" fill="none" opacity="0.4"/>
+    
+    <!-- Minimalist High-End Collar -->
+    <path d="M340 540 L400 660 L460 540 L420 520 L400 550 L380 520 Z" fill="#141414" stroke="rgba(242,140,40,0.4)" stroke-width="1.5"/>
+
+    <!-- Neck & Head Shape with High Contrast Editorial Lighting -->
+    <path d="M370 430 L370 540 L430 540 L430 430 Z" fill="#161616"/>
+    <path d="M430 430 L430 540" stroke="#F28C28" stroke-width="2.5" opacity="0.9"/>
+
+    <!-- Head Oval -->
+    <ellipse cx="400" cy="330" rx="115" ry="145" fill="#181818" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Editorial Orange Edge Lighting -->
+    <path d="M480 230 C530 280 530 380 485 445" stroke="#FFB347" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <path d="M475 220 C520 270 520 370 480 440" stroke="#F28C28" stroke-width="8" fill="none" opacity="0.4" filter="url(#cinematicBlur)"/>
+
+    <!-- Minimal Modern Face Contour / Creative Spec Glasses -->
+    <rect x="345" y="305" width="45" height="28" rx="6" fill="none" stroke="#F5F5F5" stroke-width="2" opacity="0.85"/>
+    <rect x="410" y="305" width="45" height="28" rx="6" fill="none" stroke="#FFB347" stroke-width="2" opacity="0.9"/>
+    <line x1="390" y1="319" x2="410" y2="319" stroke="#F5F5F5" stroke-width="2" opacity="0.85"/>
+    <line x1="455" y1="315" x2="490" y2="305" stroke="#FFB347" stroke-width="2" opacity="0.9"/>
+    <line x1="345" y1="315" x2="310" y2="305" stroke="#F5F5F5" stroke-width="2" opacity="0.85"/>
+
+    <!-- Hair Silhouette -->
+    <path d="M295 320 C285 220 350 170 400 170 C465 170 515 210 510 320 C490 220 460 195 400 195 C340 195 310 240 295 320 Z" fill="#0d0d0d"/>
+
+    <!-- Cyber / Editorial Accent HUD Elements -->
+    <circle cx="432" cy="319" r="3" fill="#F28C28"/>
+    <circle cx="368" cy="319" r="3" fill="#F5F5F5"/>
+  </g>
+
+  <!-- Editorial Metadata Floating Text Overlay -->
+  <text x="60" y="920" font-family="'Space Grotesk', sans-serif" font-size="11" letter-spacing="4" fill="#A0A0A0">CREATIVE TECH PROFILE</text>
+  <text x="60" y="945" font-family="'Space Grotesk', sans-serif" font-size="20" font-weight="700" letter-spacing="2" fill="#F5F5F5">DAIZY MAGPANTAY</text>
+
+  <text x="740" y="945" text-anchor="end" font-family="'Space Grotesk', sans-serif" font-size="12" letter-spacing="3" fill="#F28C28">2026 // EDITION</text>
+  <circle cx="560" cy="940" r="4" fill="#F28C28"/>
+</svg>
